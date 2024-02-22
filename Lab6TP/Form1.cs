@@ -20,7 +20,7 @@ namespace Lab6TP
             pictureBox.BorderStyle = BorderStyle.Fixed3D;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void TrapezoidButton(object sender, EventArgs e)
         {
             using (var dialog = new Dialog())
             {
@@ -31,7 +31,7 @@ namespace Lab6TP
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void DrawButton(object sender, EventArgs e)
         {
             if (figure != null)
             {
@@ -43,7 +43,7 @@ namespace Lab6TP
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void RectangleButton(object sender, EventArgs e)
         {
             figure = new Rectangle(0, 0);
 

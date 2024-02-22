@@ -19,7 +19,7 @@ namespace Lab6TP
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void ContinueButton(object sender, EventArgs e)
         {
             if (int.TryParse(textBox1.Text, out int width) && int.TryParse(textBox2.Text, out int height))
             {
@@ -35,6 +35,12 @@ namespace Lab6TP
             {
                 MessageBox.Show("Введите корректные значения для ширины и высоты");
             }
+        }
+
+        private void CancelButton(object sender, EventArgs e)
+        {
+            DialogResult = DialogResult.Cancel;
+            Close();
         }
     }
 }

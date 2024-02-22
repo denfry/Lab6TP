@@ -21,17 +21,17 @@ namespace Lab6TP
         {
             Graphics g = pictureBox.CreateGraphics();
             
-            // Очищаем область PictureBox
+            
             g.Clear(Color.White);
 
-            // Вычисляем координаты вершин трапеции
+            
             int x1 = (pictureBox.Width - Width) / 2;
             int x2 = x1 + Width;
             int x3 = x1 + (Width - Width / 2);
             int y1 = pictureBox.Height - Height;
             int y2 = pictureBox.Height;
 
-            // Определяем массив вершин
+            
             Point[] points =
             {
                 new Point(x1, y2),
@@ -40,7 +40,7 @@ namespace Lab6TP
                 new Point(x1 + Width / 2, y1)
             };
 
-            // Рисуем контур фигуры
+            
             g.DrawPolygon(Pens.Black, points);
         }
     }
